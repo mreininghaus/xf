@@ -8,3 +8,4 @@ add_executable(xf main.c)
 target_compile_definitions(xf PRIVATE "_GNU_SOURCE")
 
 install(TARGETS xf)
+include(CPack)
