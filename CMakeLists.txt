@@ -1,6 +1,6 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 3.17)
 
-project(xf LANGUAGES C VERSION 0.1)
+project(xf LANGUAGES C VERSION 0.2)
 
 include(GNUInstallDirs)
 

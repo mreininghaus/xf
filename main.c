@@ -28,8 +28,7 @@ int main(int argc, char const* const* argv) {
     return EXIT_FAILURE;
   }
 
-  int const dirfd = open(".", O_RDONLY);
-
+  int const dirfd = AT_FDCWD;
   int const r = renameat2(dirfd, argv[1], dirfd, argv[2], RENAME_EXCHANGE);
   if (r == -1) {
     int const errsv = errno;
